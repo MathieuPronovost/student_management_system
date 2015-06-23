@@ -1,0 +1,25 @@
+/* TP3
+Mathieu Pronovost
+PROM18118300
+Code basé sur la solution du laboratoire 8 rédigée par Alexandar Dimitrov */
+
+extends layout
+
+block content
+	#message(style='display:none')
+		span
+	#wrapper
+		a(href="/ajout") Ajouter un étudiant
+	
+		h2 Liste des étudiants
+		#listeUt
+			table
+				thead
+					th Code Permanent
+					th Nom
+					th Prénom
+					th Date de Naissance
+					th Dossier Étudiant
+				tbody
+	block scripts
+		script(src='/javascripts/etudiants.js')

@@ -1,0 +1,45 @@
+body {
+  padding: 80px 50px 50px 50px;
+  font: 14px Helvetica;
+}
+td,
+table {
+  border: 1px solid;
+}
+td {
+  text-align: left;
+}
+th {
+  text-align: center;
+  background-color: #ffa500;
+}
+label {
+  float: left;
+  width: 120px;
+}
+input[type=text] {
+  width: 500px;
+}
+.erreur {
+  border: 5px solid #f00;
+}
+#message {
+  padding: 20px 20px 20px 20px;
+  font: 20px Helvetica;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  align: center;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+message span {
+  width: 100%;
+}
+.couleurVerte {
+  background-color: #008000;
+}
+.couleurRouge {
+  background-color: #f00;
+}

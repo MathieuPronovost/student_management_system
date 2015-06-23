@@ -1,0 +1,51 @@
+/* TP3
+Mathieu Pronovost
+PROM18118300
+Code basé sur la solution du laboratoire 8 rédigée par Alexandar Dimitrov */
+
+extends layout
+
+block content
+
+	#message(style='display:none')
+		span
+	#wrapper
+		h2 Dossier de l'étudiant
+		#ajoutUtil
+			fieldset
+				label id: 
+				input#id(type='text', disabled, value=etudiant._id)
+				br
+				label Code Permanent: 
+				input#codePermanent(type='text', disabled, placeholder='codePermanent', value=etudiant.codePermanent)
+				br
+				label Nom: 
+				input#nom(type='text', disabled, placeholder='Nom', value=etudiant.nom)
+				br
+				label Prénom: 
+				input#prenom(type='text', disabled, placeholder='prenom', value=etudiant.prenom)
+				br
+				label Sexe:
+				input#sexe(type='text', disabled, placeholder='sexe', value=etudiant.sexe)
+				br
+				label Naissance: 
+				input#dateNaissance(type='text', disabled, placeholder='dateNaissance', value=etudiant.dateNaissance)
+				br
+				label Inscriptions: 
+				textarea#textarea(name='textarea', placeholder=JSON.stringify(etudiant.inscriptions), cols='80', disabled, rows='12')
+				br
+				label Cours Réussis: 
+				input#coursReussi(type='text', disabled, placeholder='coursReussi', value=etudiant.coursReussi)
+				br
+				
+				
+				
+	div
+		p
+			a(href="/") Liste d'etudiants
+			br
+			a(href="/site/modifieretudiant/"+etudiant._id) Modifier
+
+	block scripts
+		script(src='/javascripts/etudiants.js')
+		script(src='/javascripts/modifieretudiant.js')

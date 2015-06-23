@@ -1,0 +1,24 @@
+{
+  "name": "tp3",
+  "version": "1.0.0",
+  "description": "TP3",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "author": "Mathieu Pronovost",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.0.2",
+    "cookie-parser": "^1.0.1",
+    "debug": "^0.7.4",
+    "express": "^4.2.0",
+    "express-xml-bodyparser": "0.0.4",
+    "jade": "^1.3.1",
+    "json-gate": "^0.8.21",
+    "mongodb": "^1.4.7",
+    "morgan": "^1.0.1",
+    "static-favicon": "^1.0.2",
+    "stylus": "^0.42.3"
+  }
+}

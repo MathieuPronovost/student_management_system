@@ -1,0 +1,38 @@
+/* TP3
+Mathieu Pronovost
+PROM18118300
+Code basé sur la solution du laboratoire 8 rédigée par Alexandar Dimitrov */
+
+extends layout
+
+block content
+	#message(style='display:none')
+		span
+	#wrapper
+		h2 Ajouter un Étudiant
+		#ajoutUtil
+			fieldset
+				legend Information sur l'étudiant
+				label Code Permanent: 
+				input#codePermanent(type='text', placeholder='codePermanent')
+				br
+				label Nom: 
+				input#nom(type='text', placeholder='Nom')
+				br
+				label Prénom: 
+				input#prenom(type='text', placeholder='Prénom')
+				br
+				label Sexe: 
+				input#sexe(type='radio', name='sexeGroupe', value='homme', checked=true)
+				| Homme 
+				input#sexe(type='radio', name='sexeGroupe', value='femme', checked=false)
+				| Femme 
+
+				br
+				label Date de Naissance: 
+				input#dateNaissance(type='text', placeholder='dateNaissance')
+
+				br
+				button#boutonAjUtil Ajouter un Étudiant
+	block scripts
+		script(src='/javascripts/etudiants.js')
